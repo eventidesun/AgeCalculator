@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- we are using HTML5-->
+<html lang="en"> <!-- Language is English -->
+<head> <!-- the head has the meta data tag and the title tag - nearly contains all the characters symbols for HTML5 -->
+    <meta charset="UTF-8"> <!-- the char set attribute -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!-- web page compatibility for internet explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.8"> <!-- sets the width of the screen to the widest width possible depending on the device being used and the initial scale (zoom level) is set to 100% by default -->
+    <title>Tip Calculator</title> <!-- the title is Document -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container"> <!-- a div with class container -->
+        <h1>Tip Calculator</h1>
+        <p>Enter the bill amount and tip percentage to calculate the total.</p>
+
+        <!-- Here, we are now going to have two inputs -->
+        
+        <!-- the bill amount -->
+        <label for="bill">Bill amount:</label>
+        <input type="number" id="bill">
+        <br/> <!-- this is our line break -->
+
+        <!-- for the the tip -->
+        <label for="tip">Tip percentage:</label>
+        <input type="number" id="tip">
+        <br/>
+
+        <button id="calculate">Calculate</button>
+        <br/>
+
+        <!-- we are going to have another label for the total -->
+        <label for="total">Total:</label>
+        <span id="total"></span> <!-- we are going to use span instead of input since we do not want to change its value-->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
